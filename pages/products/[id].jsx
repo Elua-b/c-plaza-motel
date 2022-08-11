@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import styles from "../styles/Products.module.css";
 
+import styles from "../../styles/Products.module.css";
+import Image from 'next/image'
 const Products = () => {
     const pizza={
         id:1,
@@ -11,7 +11,12 @@ const Products = () => {
     };
   return (
     <div className={styles.container}>
-      
+      <div className={styles.left}>
+        <div className={styles.imgContainer}>
+          <Image src={pizza.img} layout="fill" alt=""/>
+        </div>
+      </div>
+      <div className={styles.right}></div>
     </div>
   )
 }
