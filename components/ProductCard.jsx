@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from "../styles/ProductCard.module.css"
 const ProductCard = () => {
+  
   return (
     <div className={styles.container}>
       <Image src="/food4.jpg" alt="" width="500" height="500"/>

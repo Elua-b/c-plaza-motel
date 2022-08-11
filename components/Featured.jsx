@@ -5,15 +5,15 @@ import styles from '../styles/Featured.module.css'
 const Featured = () => {
     const images=[
     {
-        name:"/foodog.png",
+        name:"/pizz3.png",
         logo:"its good"
     },
     {
-      name:"/food2.jpg",
+      name:"/pizz2.png",
       logo:"its good"
   },
   {
-    name:"/food3.jpg",
+    name:"/pizz1.png",
     logo:"its good"
   }
     ]
