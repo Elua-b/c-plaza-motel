@@ -48,7 +48,9 @@ const Cart = () => {
           </tbody>
         </table>
       </div>
-      <div className={styles.right}></div>
+      <div className={styles.right}>
+        
+      </div>
     </div>
   );
 };
