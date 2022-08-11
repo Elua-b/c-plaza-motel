@@ -36,6 +36,206 @@ import Image from "next/image";
               </td>
             </tr>
           </tbody>
+          <tbody>
+            <tr>
+              
+              <td>
+                <span className={styles.id}>43255226436</span>
+              </td>
+              <td>
+                <span className={styles.name}>
+                 BUGINGO Eloi
+                </span>
+              </td>
+              <td>
+                <span className={styles.address}>NYAMIRAMBO KN.232-43</span>
+              </td>
+              
+              <td>
+                <span className={styles.total}>$39.80</span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <td>
+                <span className={styles.id}>43255226436</span>
+              </td>
+              <td>
+                <span className={styles.name}>
+                 BUGINGO Eloi
+                </span>
+              </td>
+              <td>
+                <span className={styles.address}>NYAMIRAMBO KN.232-43</span>
+              </td>
+              
+              <td>
+                <span className={styles.total}>$39.80</span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <td>
+                <span className={styles.id}>43255226436</span>
+              </td>
+              <td>
+                <span className={styles.name}>
+                 BUGINGO Eloi
+                </span>
+              </td>
+              <td>
+                <span className={styles.address}>NYAMIRAMBO KN.232-43</span>
+              </td>
+              
+              <td>
+                <span className={styles.total}>$39.80</span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <td>
+                <span className={styles.id}>43255226436</span>
+              </td>
+              <td>
+                <span className={styles.name}>
+                 BUGINGO Eloi
+                </span>
+              </td>
+              <td>
+                <span className={styles.address}>NYAMIRAMBO KN.232-43</span>
+              </td>
+              
+              <td>
+                <span className={styles.total}>$39.80</span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <td>
+                <span className={styles.id}>43255226436</span>
+              </td>
+              <td>
+                <span className={styles.name}>
+                 BUGINGO Eloi
+                </span>
+              </td>
+              <td>
+                <span className={styles.address}>NYAMIRAMBO KN.232-43</span>
+              </td>
+              
+              <td>
+                <span className={styles.total}>$39.80</span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <td>
+                <span className={styles.id}>43255226436</span>
+              </td>
+              <td>
+                <span className={styles.name}>
+                 BUGINGO Eloi
+                </span>
+              </td>
+              <td>
+                <span className={styles.address}>NYAMIRAMBO KN.232-43</span>
+              </td>
+              
+              <td>
+                <span className={styles.total}>$39.80</span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <td>
+                <span className={styles.id}>43255226436</span>
+              </td>
+              <td>
+                <span className={styles.name}>
+                 BUGINGO Eloi
+                </span>
+              </td>
+              <td>
+                <span className={styles.address}>NYAMIRAMBO KN.232-43</span>
+              </td>
+              
+              <td>
+                <span className={styles.total}>$39.80</span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <td>
+                <span className={styles.id}>43255226436</span>
+              </td>
+              <td>
+                <span className={styles.name}>
+                 BUGINGO Eloi
+                </span>
+              </td>
+              <td>
+                <span className={styles.address}>NYAMIRAMBO KN.232-43</span>
+              </td>
+              
+              <td>
+                <span className={styles.total}>$39.80</span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <td>
+                <span className={styles.id}>43255226436</span>
+              </td>
+              <td>
+                <span className={styles.name}>
+                 BUGINGO Eloi
+                </span>
+              </td>
+              <td>
+                <span className={styles.address}>NYAMIRAMBO KN.232-43</span>
+              </td>
+              
+              <td>
+                <span className={styles.total}>$39.80</span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <td>
+                <span className={styles.id}>43255226436</span>
+              </td>
+              <td>
+                <span className={styles.name}>
+                 BUGINGO Eloi
+                </span>
+              </td>
+              <td>
+                <span className={styles.address}>NYAMIRAMBO KN.232-43</span>
+              </td>
+              
+              <td>
+                <span className={styles.total}>$39.80</span>
+              </td>
+            </tr>
+          </tbody>
           
         </table>
             </div>
