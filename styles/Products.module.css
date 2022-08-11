@@ -18,3 +18,19 @@
     border-radius: 50%;
     position: relative;
 }
+.price{
+    color: #d1411e;
+    font-size:24px;
+    font-weight: 400;
+    border-bottom: 1px solid #d1411e;
+}
+.sizes{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.size{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
