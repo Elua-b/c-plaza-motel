@@ -1,6 +1,6 @@
+import styles from "../styles/Navbar.module.css"
 
 import Image from 'next/image'
-import styles from '../styles/Navbar.module.css'
 export const Navbar = () => {
   return (
     <div className={styles.container}>
