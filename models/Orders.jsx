@@ -1,32 +1,29 @@
 import mongoose from "mongoose";
 const OrderSchema = new mongoose.Schema(
   {
-    title: {
+    customer: {
       type: String,
       required: true,
       maxlength: 60,
     },
-    desc: {
+    address: {
       type: String,
       required: true,
       maxlength: 200,
     },
-    img: {
-      type: String,
+    total: {
+      type: Number,
       required: true,
     },
-    prices: {
-      type: [Number],
-      required: true,
+    status: {
+      type: Number,
+      default:0
     },
-    extraOptions: {
-      type: [
-        {
-          text: { type: String, required: true },
-          price: { type: Number, required: true },
-        },
-      ],
-    },
+    method : {
+        type: Number,
+        required:true
+      },
+      
   },
   { timestamps: true }
 );
