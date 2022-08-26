@@ -1,13 +1,15 @@
-import {createSlide} from "@reduxjs/toolkit"
-const cartSlide=createSlide({
+import {createSlice} from "@reduxjs/toolkit"
+const cartSlide=createSlice({
     name:"cart",
     initialState:{
         products:[],
+        quantity:0,
         total:0
     },
     reducers:{
         addProduct:(state,action)=>{
-            state.products.push(action.payload)
+            state.products.push(action.payload);
+            state.quantity +=1;
             state.total +=action.payload.price * action.payload.quantity
         },
         reset:(state)=>{
