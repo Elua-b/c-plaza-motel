@@ -8,7 +8,7 @@ import { Navbar } from '../components/Navbar'
 import Featured from '../components/Featured'
 import Productlist from '../components/Productlist'
 
-export default function Home() {
+export default function Home({productList}) {
   return (
     <div className={styles.container}>
       <Head>
