@@ -1,26 +1,21 @@
 import styles from "../../styles/Products.module.css";
+import axios from 'axios'
 import Image from "next/image";
 import { useState } from "react";
-const Products = () => {
+const Products = ({product}) => {
   const [size, setSize] = useState(0);
-  const pizza = {
-    id: 1,
-    img: "/pizza3.jpg",
-    name: "CAMPANOA",
-    price: [19.9, 23.4, 27.9],
-    desc: "lorem ipsum is oelready now to update on th cplaza motel Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknow Missingshor Must includenow to update on th cplaza motel Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknow Missingshor Must include  ",
-  };
+ 
   return (
     <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.imgContainer}>
-          <Image src={pizza.img} layout="fill" alt="" />
+          <Image src={product.img} layout="fill" alt="" />
         </div>
       </div>
       <div className={styles.right}>
-        <h1 className={styles.title}>{pizza.name}</h1>
-        <span className={styles.price}>${pizza.price[size]}</span>
-        <p className={styles.desc}>{pizza.desc}</p>
+        <h1 className={styles.title}>{product.name}</h1>
+        <span className={styles.price}>${product.prices[size]}</span>
+        <p className={styles.desc}>{product.desc}</p>
         <h3 className={styles.choose}>Choose the size</h3>
         <div className={styles.sizes}>
           <div className={styles.size} onClick={() => setSize(0)}>
@@ -81,11 +76,11 @@ const Products = () => {
     </div>
   );
 };
-export const getServerSideProps=async()=>{
-  const res=await axios.get("http://localhost:3000/api/products")
+export const getServerSideProps=async({params})=>{
+  const res=await axios.get(`http://localhost:3000/api/products/${params.id}`)
   return{
     props:{
-      productList:res.data
+      product:res.data
     }
   }
   }
