@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import axios from 'axios'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Footer from '../components/Footer'
@@ -16,7 +17,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Featured/>
-      <Productlist/>
+      <Productlist productList={productList}/>
     </div>
   )
+}
+export const getServerSideProps=async()=>{
+const res=await axios.get("http://localhost:3000/api/products")
+return{
+  props:{
+    productList:res.data
+  }
+}
 }
