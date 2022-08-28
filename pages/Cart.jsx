@@ -9,7 +9,7 @@ import {
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
 
-// This values are the props in the UI
+// This values are the props in the UI 
 const Cart = () => {
   const [open,setOpen]=useState(false)
   const amount = "2";
@@ -58,8 +58,9 @@ const Cart = () => {
               });
           }}
           onApprove={function (data, actions) {
-            return actions.order.capture().then(function () {
+            return actions.order.capture().then(function (details) {
               // Your code here after capture the order
+              console.log(details);
             });
           }}
         />
