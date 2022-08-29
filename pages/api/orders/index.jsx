@@ -1,5 +1,6 @@
 import { dbconnection } from "../../../util/mongo";
-import Order from "../../../models/Order";
+import Order from "../../../models/Orders"
+
 
 const handler=async(req,res)=>{
     const {method}=req;
@@ -14,7 +15,7 @@ const handler=async(req,res)=>{
     }
     if(method==="POST"){
         try {
-            const orders=await Order.find(req.body)
+            const orders=await Order.create(req.body)
             res.status(201).json(orders);
         } catch (error) {
             res.status(500).json(error)

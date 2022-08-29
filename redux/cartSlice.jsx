@@ -13,7 +13,9 @@ const cartSlide=createSlice({
             state.total +=action.payload.price * action.payload.quantity
         },
         reset:(state)=>{
-            state=initialState;
+            state.products=[];
+            state.quantity =0;
+            state.total =0;
         }
     }
 });
