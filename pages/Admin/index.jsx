@@ -68,12 +68,12 @@ function index({orders,products}) {
           </thead>
           {orderList.map((order)=>(
 
-            <tbody key>
+            <tbody key={order._id}>
             <tr className={styles.trTitle}>
-              <td>{"4546787980943455".slice(0, 5)}...</td>
-              <td>john Doe</td>
-              <td>$50</td>
-              <td>paid</td>
+              <td>{order._id.slice(0, 5)}...</td>
+              <td>{order.customer}</td>
+              <td>${order.total}</td>
+              <td>{order.method ===0 ? (<span>Cash</span>) : (<span>Paid</span>)}</td>
               <td>preparing</td>
               <td>
                 <button className="">Next stage</button>
