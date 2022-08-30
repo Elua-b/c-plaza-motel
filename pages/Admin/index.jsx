@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../styles/Admin.module.css";
 import Image from "next/image";
 import axios from "axios";
-function index() {
+function index({orders,products}) {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
@@ -17,26 +17,29 @@ function index() {
               <th>Action</th>
             </tr>
           </thead>
-          <tbody>
+          {products.map((product)=>(
+            <tbody key={product._id}>
             <tr className={styles.trTitle}>
               <td>
                 <Image
-                  src="/food2.jpg"
+                  src={product.img}
                   width={50}
                   height={50}
                   objectFit="cover"
                   alt=""
                 />
               </td>
-              <td>pizzaId</td>
-              <td>pizza Title</td>
-              <td>$50</td>
+              <td>{product._id.slice(0,5)}...</td>
+              <td>{product.title}</td>
+              <td>{product.prices[0]}</td>
               <td>
                 <button className={styles.button}>Edit</button>
                 <button className={styles.button}>Delete</button>
               </td>
             </tr>
           </tbody>
+          ))}
+          
         </table>
       </div>
       <div className={styles.item}>
@@ -58,7 +61,7 @@ function index() {
               <td>john Doe</td>
               <td>$50</td>
               <td>paid</td>
-              <td>preparing</td>+
+              <td>preparing</td>
               <td>
                 <button className="">Next stage</button>
               </td>
@@ -70,15 +73,15 @@ function index() {
   );
 }
 
-// export const getServerSideProps = async (ctx) => {
-//   const productRes = await axios.get("http://localhost:3000/api/products");
-//   const orderRes = await axios.get("http://localhost:3000/api/orders");
+export const getServerSideProps = async (ctx) => {
+  const productRes = await axios.get("http://localhost:3000/api/products");
+  const orderRes = await axios.get("http://localhost:3000/api/orders");
 
-//   return {
-//     props: {
-//       orders: orderRes.data,
-//       products: productRes.data,
-//     },
-//   };
-//};
+  return {
+    props: {
+      orders: orderRes.data,
+      products: productRes.data,
+    },
+  };
+};
 export default index;
